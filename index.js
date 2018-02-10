@@ -1,7 +1,7 @@
-// Create function to grab url of image clicked:
+// Create function to grab url of image clicked and replace url of big picture
 let replaceImage = function(event) {
 
-  // let theImage = jQuery(this)
+  //Create function to grab url of image clicked
   let theImage = jQuery(event.target)
   console.log("Got a click event:", event)
   let srcValue = theImage.attr("src")
@@ -12,4 +12,5 @@ let replaceImage = function(event) {
 
 }
 
+//Execute function when image is clicked on page
 jQuery("img").on("click", replaceImage)
